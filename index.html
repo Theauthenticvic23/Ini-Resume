@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fabiyi Inioluwa - CV</title>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="Inioluwa CV/picture.png.jpg" alt="Your Profile Picture">
+        </div>
+        <div class="header-text">
+            <h1>Fabiyi Inioluwa Deborah</h1>
+            <p>Recent Mass Communication Graduate</p>
+        </div>
+    </header>
+
+    <section id="contact" class="info-section">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p>Email: fabiyiinioluwa@gmail.com</p>
+            <p>Phone: 0906428301</p>
+            <p>WhatsApp: 09084658126</p>
+            <p>Instagram: Inioluwa Fabiyi</p>
+        </div>
+    </section>
+
+    <section id="education" class="info-section">
+        <h2 class="section-header">Education</h2>
+        <div class="content-container">
+            <div class="education-info">
+                <p>Bachelor of Mass Communication</p>
+                <p>Koladaisi University - Graduation Date</p>
+                <p>CGPA = 4.28</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="info-section">
+        <h2 class="section-header">Work Experience</h2>
+        <div class="content-container">
+            <div class="experience-info">
+                <div class="job">
+                    <h3>Internship at Broadcasting Corporation of Oyo State (BCOS)</h3>
+                    <p>Organizing vox pops, editing and writing news stories, gathering news, conducting interviews and talk shows, creating content.</p>
+                </div>
+                <div class="job">
+                    <h3>Internship at Diamond FM</h3>
+                    <p>Conducting vox pops, interviewing guests, arranging files, writing and editing news stories, sourcing for news.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="info-section">
+        <h2 class="section-header">Training</h2>
+        <div class="content-container">
+            <div class="training-info">
+                <div class="course">
+                    <h3>02Academy Lagos, Nigeria</h3>
+                    <p>Learning more about content creation, creating and editing videos using applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="info-section">
+        <h2 class="section-header">Skills</h2>
+        <div class="content-container">
+            <ul class="skills-list">
+                <li>Communication Skills</li>
+                <li>Writing and Editing</li>
+                <li>Social Media Management</li>
+                <li>Sales</li>
+                <li>Problem Solving</li>
+                <li>Team Building</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="info-section">
+        <h2 class="section-header">Projects</h2>
+        <div class="content-container">
+            <div class="project-info">
+                <div class="project">
+                    <h3>02Academy Project</h3>
+                    <p>Editing content for Chi Active drink.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>References available upon request</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sectionHeaders = document.querySelectorAll('.section-header');
+
+            sectionHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const contentContainer = this.nextElementSibling;
+                    contentContainer.style.maxHeight = contentContainer.style.maxHeight ? null : contentContainer.scrollHeight + 'px';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
